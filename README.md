@@ -31,9 +31,9 @@ The script will run in the foreground and continuously check internet connectivi
 ## Customization
 You can customize the script as needed by modifying the following variables at the top of the script:
 
- Markup : ip: the IP address to ping (default is Google's DNS server)
- Markup : on_cmd: the command to turn the LED on (default is echo 1 | sudo tee /sys/class/leds/PWR/brightness)
- Markup : off_cmd: the command to turn the LED off (default is echo 0 | sudo tee /sys/class/leds/PWR/brightness)
+ Markup : * ip: the IP address to ping (default is Google's DNS server)
+ Markup : * on_cmd: the command to turn the LED on (default is echo 1 | sudo tee /sys/class/leds/PWR/brightness)
+ Markup : * off_cmd: the command to turn the LED off (default is echo 0 | sudo tee /sys/class/leds/PWR/brightness)
  You can also modify the while loop to change the interval between checks (default is 30 seconds):
 
 ```
